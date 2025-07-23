@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.a8692c1e.css",
+    "main.js": "/portfolio/static/js/main.688a1355.js",
+    "static/js/415.4d6acbeb.chunk.js": "/portfolio/static/js/415.4d6acbeb.chunk.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/edu_gif.gif": "/portfolio/static/media/edu_gif.9d4607f6763f095af83e.gif",
+    "static/media/pre.gif": "/portfolio/static/media/pre.91c09d1da90822b4be1b.gif",
+    "static/media/robdronego.png": "/portfolio/static/media/robdronego.5f72e908410f40bc6b81.png",
+    "static/media/me.jpg": "/portfolio/static/media/me.ed3bcb52539c843b5c80.jpg",
+    "static/media/CV - João Costa.pdf": "/portfolio/static/media/CV - João Costa.c9a943c6b4c2f4b96e50.pdf",
+    "static/media/schoolportal.jpg": "/portfolio/static/media/schoolportal.f55feacac144959730cd.jpg",
+    "static/media/logo.png": "/portfolio/static/media/logo.0d5b20da980966439e07.png",
+    "static/media/booksamsys.svg": "/portfolio/static/media/booksamsys.5dbb631e72c7157c17a3c80decd02717.svg",
+    "static/media/connectly.png": "/portfolio/static/media/connectly.13a3dd9d26cefe30420a.png",
+    "static/media/neurohr.avif": "/portfolio/static/media/neurohr.7e4bde546b9190d4b16c.avif",
+    "index.html": "/portfolio/index.html",
+    "main.a8692c1e.css.map": "/portfolio/static/css/main.a8692c1e.css.map",
+    "main.688a1355.js.map": "/portfolio/static/js/main.688a1355.js.map",
+    "415.4d6acbeb.chunk.js.map": "/portfolio/static/js/415.4d6acbeb.chunk.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a8692c1e.css",
+    "static/js/main.688a1355.js"
+  ]
+}
