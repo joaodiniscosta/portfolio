@@ -5,7 +5,6 @@ import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
 import { motion } from "framer-motion";
-import Tilt from "react-parallax-tilt";
 
 function Home() {
   return (

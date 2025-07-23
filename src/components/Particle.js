@@ -1,5 +1,5 @@
-import React from "react";
-import Particles from "react-tsparticles";
+import backgroundVideo from '../Assets/background.mp4';
+
 
 function Particle() {
   return (
@@ -11,7 +11,7 @@ function Particle() {
         playsInline
         className="video-background"
       >
-        <source src="/background_vid.mp4" type="video/mp4" />
+        <source src={backgroundVideo} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div className="overlay" />

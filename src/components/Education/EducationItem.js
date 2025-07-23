@@ -1,9 +1,6 @@
-import React, { useState } from "react";
-import { Card, Button } from "react-bootstrap";
-import { motion, AnimatePresence } from "framer-motion";
+import { Card } from "react-bootstrap";
 
 function EducationItem({ degree, institution, dates, description, onShowSpecializations }) {
-  const [open, setOpen] = useState(false);
 
     return (
         <Card

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ExperienceOverlay from "../Education/EducationOverlay";
 import ExperienceItem from "../Education/EducationItem";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import { Col, Row } from "react-bootstrap";
 
 function ExperienceCard() {
