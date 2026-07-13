@@ -33,4 +33,4 @@ This project is built using:
 
 ---
 
-_Built by João Costa | 2026_
+_Built by João Costa | 2026_ 
