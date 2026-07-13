@@ -1,116 +1,115 @@
 import { useState } from "react";
 import ExperienceOverlay from "../Education/EducationOverlay";
 import ExperienceItem from "../Education/EducationItem";
-import { AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Col, Row } from "react-bootstrap";
 
 function ExperienceCard() {
   const [openOverlay, setOpenOverlay] = useState(null);
 
-  const deloitte1Specializations = [
+  const teamLeaderSpecializations = [
     {
-      title: "ServiceNow Platform Maintenance",
-      detail: "Performed updates, bug fixes and configuration adjustments in a deeply customized ServiceNow instance used by thousands of users daily.",
+      title: "Team Leadership",
+      detail: "Lead a technical team of 15 developers, overseeing the evolution of a low-code application supporting over 30,000 active users.",
     },
     {
-      title: "ITSM & Workflow Automation",
-      detail: "Worked with ServiceNow IT Service Management modules and automated key workflows to improve process efficiency and reduce manual effort.",
+      title: "Strategic Roadmap",
+      detail: "Define technical roadmaps in collaboration with Product Owners, ensuring alignment with strategic business objectives.",
     },
     {
-      title: "Platform Debugging & Performance Tuning",
-      detail: "Diagnosed complex issues and optimized system behavior to maintain platform stability and responsiveness under high load.",
+      title: "Mentorship & Growth",
+      detail: "Promote technical excellence by mentoring junior engineers and fostering a culture of continuous learning and high-quality code standards.",
+    },
+    {
+      title: "Process Optimization",
+      detail: "Streamline GBS processes and instance transitions to ensure operational stability and efficiency during critical project phases.",
     }
   ];
 
-
-  const deloitte2Specializations = [
+  const techAnalystSpecializations = [
     {
-      title: "Enterprise Architecture & Governance",
-      detail: "Architected scalable, maintainable low-code platforms supporting 30k+ users and enterprise integration patterns.",
+      title: "Platform Evolution",
+      detail: "Contributed to the evolution of a platform by integrating new features based on monitoring and user feedback.",
     },
     {
-      title: "Cross-Functional Team Leadership",
-      detail: "Led a multidisciplinary team of 15 developers, overseeing Agile delivery cycles, mentoring junior engineers and driving innovation across sprints.",
+      title: "Incident Management",
+      detail: "Proactively resolved technical bottlenecks and system incidents, improving software development lifecycle efficiency.",
     },
     {
-      title: "User Experience Optimization",
-      detail: "Improved platform usability and adoption through performance tuning, intuitive UI design and data-driven UX testing strategies.",
+      title: "Functional Specification",
+      detail: "Translated complex business requirements into detailed technical specifications, ensuring high-quality implementation in ServiceNow.",
+    },
+    {
+      title: "Performance Tuning",
+      detail: "Analyzed system performance metrics to identify and mitigate risks, ensuring a responsive user experience under high load.",
     }
   ];
 
-
-
-  const samsysSpecializations = [
+  const fullStackSpecializations = [
     {
-      title: "Full-Stack Application Development",
-      detail: "Built modern web apps with React, Node.js, and Express, ensuring responsive design and clean architecture.",
+      title: "Full-Stack Development",
+      detail: "Directly collaborated with clients to deliver tailored solutions and created two new modules for an existing platform.",
     },
     {
-      title: "Database Optimization",
-      detail: "Designed efficient database schemas in MySQL, focusing on indexing and query performance.",
+      title: "Client Requirements",
+      detail: "Engaged directly with clients to identify needs and deliver custom solutions that effectively bridged business gaps.",
     },
     {
-      title: "API Design & Integration",
-      detail: "Developed and consumed RESTful APIs to connect front-end applications with back-end services.",
-    },
-    {
-      title: "Agile & DevOps Exposure",
-      detail: "Participated in daily stand-ups and CI/CD workflows, gaining experience with GitLab pipelines and deployment automation.",
+      title: "System Integration",
+      detail: "Implemented modular enhancements to existing platforms, focusing on clean architecture and maintainability.",
     }
   ];
-
 
   return (
     <div style={{ position: "relative" }}>
-      
       <Row>
         <Col md={4}>
           <ExperienceItem
-            degree="Service Management Tech Lead"
+            degree="Team Leader (ServiceNow)"
             institution="Deloitte"
-            dates="May 2025 - Present"
-            description="Leading a cross-functional team of 15 developers in the evolution of a mission-critical low-code application that processes over 30,000 daily active users across multiple business verticals. This enterprise-grade platform has been in continuous production for 7+ years, requiring sophisticated architecture decisions and seamless user experience optimization."
-            onShowSpecializations={() => setOpenOverlay("deloitte2")}
+            dates="2026 - Present"
+            description="Lead a technical team of 15 developers, overseeing the evolution of a low-code application supporting over 30,000 active users."
+            onShowSpecializations={() => setOpenOverlay("teamLeader")}
           />
         </Col>
         <Col md={4}>
           <ExperienceItem
-            degree="Software Analyst"
+            degree="Tech Analyst (ServiceNow)"
             institution="Deloitte"
-            dates="Set 2024 - May 2025"
-            description="Worked on the maintenance and evolution of a highly customized ServiceNow instance serving thousands of users across multiple departments. Involved in diagnosing complex issues, implementing enhancements, and ensuring system performance and reliability within a fast-paced enterprise environment."
-            onShowSpecializations={() => setOpenOverlay("deloitte1")}
+            dates="2024 - 2026"
+            description="Contributed to the evolution of a platform by integrating new features based on monitoring and user feedback."
+            onShowSpecializations={() => setOpenOverlay("techAnalyst")}
           />
         </Col>
         <Col md={4}>
           <ExperienceItem
-            degree="Full-Stack Intern Developer"
+            degree="Full-Stack Developer (JavaScript and .NET)"
             institution="Samsys"
-            dates="Set 2024 - Set 2025"
-            description="Contributed to the development of an innovative business automation platform designed to revolutionize how SMEs approach digital transformation. This responsive web application centralized multiple business processes into a single, intuitive interface."
-            onShowSpecializations={() => setOpenOverlay("samsys")}
+            dates="2024"
+            description="Directly collaborated with clients to deliver tailored solutions and created two new modules for an existing platform[cite: 2]."
+            onShowSpecializations={() => setOpenOverlay("fullStack")}
           />
         </Col>
       </Row>
 
       <AnimatePresence>
-        {openOverlay === "deloitte2" && (
+        {openOverlay === "teamLeader" && (
           <ExperienceOverlay
-            specializations={deloitte2Specializations}
+            specializations={teamLeaderSpecializations}
             onClose={() => setOpenOverlay(null)}
             side="left"
           />
         )}
-        {openOverlay === "deloitte1" && (
+        {openOverlay === "techAnalyst" && (
           <ExperienceOverlay
-            specializations={deloitte1Specializations}
+            specializations={techAnalystSpecializations}
             onClose={() => setOpenOverlay(null)}
             side="center"
           />
         )}
-        {openOverlay === "samsys" && (
+        {openOverlay === "fullStack" && (
           <ExperienceOverlay
-            specializations={samsysSpecializations}
+            specializations={fullStackSpecializations}
             onClose={() => setOpenOverlay(null)}
             side="right"
           />

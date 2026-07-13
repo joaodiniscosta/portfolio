@@ -1,3 +1,4 @@
+import React from "react";
 import preloaderGif from "../../src/Assets/pre.gif"; // ajusta o caminho conforme necessário
 
 function Pre(props) {

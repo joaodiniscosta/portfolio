@@ -1,7 +1,7 @@
 import { useState } from "react";
 import EducationOverlay from "./EducationOverlay";
 import EducationItem from "./EducationItem";
-import { AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Col, Row } from "react-bootstrap";
 
 function EducationCard() {
@@ -69,6 +69,14 @@ function EducationCard() {
         </h1>
           <Col md={4}>
             <EducationItem
+              degree="Certified Implementation Specialist - HR (CIS-HR)"
+              institution="ServiceNow"
+              dates="2026"
+              description="Expert-level proficiency in implementing and configuring ServiceNow HR Service Delivery solutions."
+            />
+          </Col>
+          <Col md={4}>
+            <EducationItem
               degree="Ethical Hacking Certification"
               institution="Cisco"
               dates="2025"
@@ -83,6 +91,8 @@ function EducationCard() {
               description="Advanced cybersecurity principles and enterprise security implementation."
             />
           </Col>
+          </Row>
+          <Row style={{ justifyContent: "center", paddingTop: "10px", paddingBottom: "30px" }}>
           <Col md={4}>
             <EducationItem
               degree="Blockchain A-Z"
@@ -91,8 +101,6 @@ function EducationCard() {
               description="Comprehensive blockchain development and distributed systems architecture."
             />
           </Col>
-          </Row>
-          <Row style={{ justifyContent: "center", paddingTop: "10px", paddingBottom: "30px" }}>
           <Col md={4}>
             <EducationItem
               degree="Certified System Administrator"
@@ -109,6 +117,8 @@ function EducationCard() {
               description="User analytics, conversion optimization and technical product marketing"
             />
           </Col>
+          </Row>
+          <Row style={{ justifyContent: "center", paddingTop: "10px", paddingBottom: "30px" }}>
           <Col md={4}>
             <EducationItem
               degree="No-Code Development"
@@ -117,8 +127,6 @@ function EducationCard() {
               description="Enterprise low-code platforms and workflow automation mastery"
             />
             </Col>
-            </Row>
-            <Row style={{ justifyContent: "center", paddingTop: "10px", paddingBottom: "30px" }}>
           <Col md={4}>
             <EducationItem
               degree="Personal Finance"

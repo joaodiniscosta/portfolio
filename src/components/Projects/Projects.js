@@ -2,10 +2,10 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import { motion } from "framer-motion";
-import booksamsys from "../../Assets/Projects/booksamsys.svg";
+import sentinelweb from "../../Assets/Projects/sentinelweb.png";
 import robdronego from "../../Assets/Projects/robdronego.png";
-import connectly from "../../Assets/Projects/connectly.png";
-import schoolportal from "../../Assets/Projects/schoolportal.jpg";
+import justnext from "../../Assets/Projects/justnext.png";
+import smartheadlines from "../../Assets/Projects/smartheadlines.png";
 import neurohr from "../../Assets/Projects/neurohr.avif";
 
 function Projects() {
@@ -24,6 +24,33 @@ function Projects() {
           <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
             <Col md={4} className="project-card">
               <ProjectCard
+                imgPath={justnext}
+                title="JustNext"
+                description="A minimalist, cloud-connected Todo Application designed to help you focus on your immediate tasks. Built with Python, Streamlit and Supabase."
+                ghLink="https://github.com/joaodiniscosta/JustNext"
+              />
+            </Col>
+
+            <Col md={4} className="project-card">
+              <ProjectCard
+                imgPath={sentinelweb}
+                title="SentinelWeb"
+                description="A Google Chrome extension, for passive real-time auditing of HTTP security headers alongside active validation of the cryptographic integrity of external resources SRI."
+                ghLink="https://github.com/joaodiniscosta/SentinelWeb"
+              />
+            </Col>
+
+            <Col md={4} className="project-card">
+              <ProjectCard
+                imgPath={smartheadlines}
+                title="Smart Headlines"
+                description="A Python automation tool that delivers a modern, beautifully designed daily news digest directly to your inbox."
+                ghLink="https://github.com/joaodiniscosta/SmartHeadlines"
+              />
+            </Col>
+
+            <Col md={4} className="project-card">
+              <ProjectCard
                 imgPath={neurohr}
                 title="NeuroHR"
                 description="A Human Resource Management System built with Java. It provides features like employee management, vacation tracking and performance evaluation."
@@ -37,33 +64,6 @@ function Projects() {
                 title="RobDroneGo"
                 description="A drone control application that allows teachers and school staff to control a drone/robot using a web interface. It features real-time video streaming, list of tasks and telemetry data display."
                 ghLink="https://github.com/joaodiniscosta/RobDroneGo"
-              />
-            </Col>
-            
-            <Col md={4} className="project-card">
-              <ProjectCard
-                imgPath={connectly}
-                title="Connectly"
-                description="A a real-time chat application built with React and Firebase, designed for group communication. It features secure Google authentication, responsive design, and seamless messaging. Ideal for teams and communities to stay connected effortlessly."
-                ghLink="https://github.com/joaodiniscosta/connectly"
-              />
-            </Col>
-
-            <Col md={4} className="project-card">
-              <ProjectCard
-                imgPath={booksamsys}
-                title="Book Samsys"
-                description="A book management system built with React and Node.js. It allows users to search and manage books easily."
-                ghLink="https://github.com/joaodiniscosta/BookSamsys"
-              />
-            </Col>
-
-            <Col md={4} className="project-card">
-              <ProjectCard
-                imgPath={schoolportal}
-                title="School Portal"
-                description="A school portal that streamlines administrative tasks, enhances communication between teachers and students and provides a centralized platform for managing academic resources and classes."
-                ghLink="https://github.com/joaodiniscosta/sem4pi-23-23"
               />
             </Col>
           </Row>
