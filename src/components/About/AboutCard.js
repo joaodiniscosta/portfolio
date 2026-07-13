@@ -1,6 +1,5 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
 
 function AboutCard() {
   return (
@@ -9,19 +8,19 @@ function AboutCard() {
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am <span className="purple">João Dinis Costa </span>
-            from <span className="purple"> Porto, Portugal.</span>
+            from <span className="purple">Porto, Portugal.</span>
             <br />
             <br />
-            I’m someone who thrives at the intersection of<span className="purple"> technology</span>, <span className="purple">curiosity</span> and <span className="purple">continuous growth</span>. With a deep passion for <span className="purple">cybersecurity</span>, <span className="purple">blockchain</span>, <span className="purple">cryptocurrencies</span> and <span className="purple">fintech</span>, I enjoy exploring how these technologies shape the future of <span className="purple">digital trust</span> and <span className="purple">financial systems</span>. Outside of work, I’m equally interested in the world of <span className="purple">investing</span>, particularly the dynamics of the stock market.
+            I am a Software Engineer and Team Leader specializing in <span className="purple">ServiceNow</span> and <span className="purple">Full-Stack development</span>. I bridge the gap between complex requirements and secure, user-centered digital solutions. My technical approach is grounded in a practical, human-centric mindset, heavily shaped by my diverse background.
             <br />
             <br />
-            I’m also committed to personal development through <span className="purple">fitness</span> and unwinding on weekends by <span className="purple">relaxing</span>, <span className="purple">listening to podcasts</span> and <span className="purple">enjoying music</span>. I truly value meaningful conversations with people who share my interests, especially through <span className="purple">networking</span> and <span className="purple">collaborative learning</span>.
+            My foundation goes beyond the screen: three years in <span className="purple">fast-paced catering</span> sharpened my resilience and client communication, while <span className="purple">programming industrial machinery</span> in Germany taught me the value of cross-cultural collaboration and precision.
             <br />
             <br />
-            What drives me is <span className="purple"> learning</span> from experienced individuals and <span className="purple"> observing</span> how they approach challenges, make decisions and solve complex problems. I tend to analyze situations carefully, aiming to act quickly, but only once I’m confident it’s the right move.
+            These roles proved that whether in a restaurant, on a production floor, or in consulting, success relies on <span className="purple">adaptability</span> and <span className="purple">operational excellence</span>. Currently pursuing a Master’s in <span className="purple">Cybersecurity</span>, I am dedicated to building technical solutions that are robust, secure, and genuinely impactful for the end-user.
             <br />
             <br />
-            Whether I’m coding, learning or lifting, I’m always seeking <span className="purple">growth</span>.
+            Beyond tech, I am passionate about <span className="purple">financial markets</span>, <span className="purple">fitness</span>, and continuous learning. I always value meaningful connections and collaborative growth.
           </p>
         </blockquote>
       </Card.Body>
