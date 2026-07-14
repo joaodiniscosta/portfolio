@@ -86,7 +86,7 @@ function ExperienceCard() {
             degree="Full-Stack Developer (JavaScript and .NET)"
             institution="Samsys"
             dates="2024"
-            description="Directly collaborated with clients to deliver tailored solutions and created two new modules for an existing platform[cite: 2]."
+            description="Directly collaborated with clients to deliver tailored solutions and created two new modules for an existing platform."
             onShowSpecializations={() => setOpenOverlay("fullStack")}
           />
         </Col>
