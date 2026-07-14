@@ -5,7 +5,6 @@ import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
 import { motion } from "framer-motion";
-import Tilt from "react-parallax-tilt";
 
 function Home() {
   return (
@@ -37,11 +36,10 @@ function Home() {
               </div>
             </Col>
 
-            <Col md={5}style={{ paddingBottom: 10 }}>
-                <img className="neon-photo-container"
-                  src={homeLogo}
-                  alt="Home Pic"
-                />
+            <Col md={5} className="d-flex justify-content-center align-items-center" style={{ paddingBottom: 10 }}>
+              <div className="neon-photo-container">
+                <img src={homeLogo} alt="Home Pic" />
+              </div>
             </Col>
           </Row>
           </motion.div>

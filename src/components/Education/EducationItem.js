@@ -1,10 +1,7 @@
-import React, { useState } from "react";
-import { Card, Button } from "react-bootstrap";
-import { motion, AnimatePresence } from "framer-motion";
+import React from "react";
+import { Card } from "react-bootstrap";
 
 function EducationItem({ degree, institution, dates, description, onShowSpecializations }) {
-  const [open, setOpen] = useState(false);
-
     return (
         <Card
         onClick={onShowSpecializations}
@@ -21,9 +18,9 @@ function EducationItem({ degree, institution, dates, description, onShowSpeciali
         onMouseLeave={e => e.currentTarget.style.transform = "scale(1)"}
         >
         <Card.Body>
-            <h2>{degree}</h2>
+            <h2 style={{ color: "#ffffff" }}>{degree}</h2>
             <h4 style={{ color: "#0ff" }}>{institution} | {dates}</h4>
-            <p style={{ textAlign: "justify" }}>{description}</p>
+            <p style={{ textAlign: "justify", color: "#e0e0e0" }}>{description}</p>
         </Card.Body>
         </Card>
     );

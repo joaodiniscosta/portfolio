@@ -8,7 +8,7 @@ function AboutCard() {
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am <span className="purple">João Dinis Costa </span>
-            from <span className="purple">Porto, Portugal.</span>
+            from <span className="purple">Vila Nova de Famalicão, Portugal.</span>
             <br />
             <br />
             I am a Software Engineer and Team Leader specializing in <span className="purple">ServiceNow</span> and <span className="purple">Full-Stack development</span>. I bridge the gap between complex requirements and secure, user-centered digital solutions. My technical approach is grounded in a practical, human-centric mindset, heavily shaped by my diverse background.

@@ -5,10 +5,7 @@ import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
 import {
-  AiOutlineHome,
   AiOutlineLaptop,
   AiOutlineCode,
   AiOutlineRead,
@@ -121,8 +118,9 @@ function NavBar() {
                 href="mailto:joaodinis.costa@hotmail.com"
                 target="_blank"
                 className="mail-btn-inner"
+                style={{ marginTop: "7%" }}
               >
-                <AiOutlineMail style={{ fontSize: "1.1em" }} />
+                <AiOutlineMail style={{fontSize: "1.1em" }} />
               </Button>
             </Nav.Item>
 

@@ -311,7 +311,6 @@ button:focus {
   height: 300px;
   border-radius: 50%;
   overflow: hidden;
-  margin: 0 auto;
   border: 4px solid #00ffff;
   box-shadow: 0 0 5px #14FFEC, 0 0 60px #0D7377, 0 0 90px #0D7377;
   transition: transform 0.3s ease;
@@ -325,6 +324,7 @@ button:focus {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 
@@ -846,4 +846,11 @@ button:focus {
 
 .custom-card-img:hover {
   opacity: 1;
+}
+
+@media (max-width: 767px) {
+  .experience-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ExperienceOverlay from "../Education/EducationOverlay";
 import ExperienceItem from "../Education/EducationItem";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import { Col, Row } from "react-bootstrap";
 
 function ExperienceCard() {
@@ -62,8 +62,8 @@ function ExperienceCard() {
 
   return (
     <div style={{ position: "relative" }}>
-      <Row>
-        <Col md={4}>
+      <Row className="g-3">
+        <Col xs={12} md={4}>
           <ExperienceItem
             degree="Team Leader (ServiceNow)"
             institution="Deloitte"
@@ -72,7 +72,7 @@ function ExperienceCard() {
             onShowSpecializations={() => setOpenOverlay("teamLeader")}
           />
         </Col>
-        <Col md={4}>
+        <Col xs={12} md={4}>
           <ExperienceItem
             degree="Tech Analyst (ServiceNow)"
             institution="Deloitte"
@@ -81,7 +81,7 @@ function ExperienceCard() {
             onShowSpecializations={() => setOpenOverlay("techAnalyst")}
           />
         </Col>
-        <Col md={4}>
+        <Col xs={12} md={4}>
           <ExperienceItem
             degree="Full-Stack Developer (JavaScript and .NET)"
             institution="Samsys"

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import EducationOverlay from "./EducationOverlay";
 import EducationItem from "./EducationItem";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import { Col, Row } from "react-bootstrap";
 
 function EducationCard() {

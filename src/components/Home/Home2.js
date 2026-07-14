@@ -17,7 +17,7 @@ function Home2() {
                 LET ME <span className="purple"> INTRODUCE </span> MYSELF
               </h1>
               <p className="home-about-body">
-                I'm João Dinis Costa, a Software Engineer and Team Lead based in Porto. 
+                My name is João Dinis Costa and I am a Software Engineer and Team Lead based in Vila Nova de Famalicão, Portugal. 
                 My professional path is defined by a blend of <b className="purple">technical precision</b> and 
                 <b className="purple"> human-centric leadership</b>, shaped by diverse experiences—from programming industrial machines in Germany to managing high-stakes teams at Deloitte.
                 <br />
