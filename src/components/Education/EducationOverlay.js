@@ -23,15 +23,16 @@ function EducationOverlay({ specializations, onClose, side }) {
           background: "rgba(0,0,0,0.95)",
           border: "1px solid #0ff",
           boxShadow: "0 0 20px #0ff",
+          color: "#ffffff"
         }}
       >
         <Card.Body>
-        <h1 style={{ fontSize: "2.6em", paddingBottom: "20px" }}>
+        <h1 style={{ fontSize: "2.6em", paddingBottom: "20px", color: "#ffffff" }}>
           Core <strong className="purple">Specializations</strong>
         </h1>
             {specializations.map((spec, i) => (
-              <div key={i}>
-                <strong>{spec.title}</strong> - {spec.detail}
+              <div key={i} style={{ color: "#e0e0e0", marginBottom: "10px" }}>
+                <strong style={{ color: "#0ff" }}>{spec.title}</strong> - {spec.detail}
               </div>
             ))}
           <Button

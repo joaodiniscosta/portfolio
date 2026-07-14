@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 
 function Experience() {
   return (
-    <Container fluid className="experience-section">
-      <Particle />
+    <Container fluid className="experience-section" style={{ minHeight: "100vh", paddingBottom: "50px" }}>
+        <Particle />
         <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 2, y: 0 }}
